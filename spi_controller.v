@@ -117,7 +117,7 @@ always @(posedge clk or negedge rstn) begin
 			if (spi_clk_cnt == CLK_PER_HALF_BIT*2-1) begin
 				spi_clk_edge_cnt <= spi_clk_edge_cnt - 1'b1;
 				spi_clk_trailing_edge <= 1'b1;
-				spi_clk_en <= 0;
+				spi_clk_cnt <= 0;
 				spi_clk <= ~spi_clk;
 			end
 			else if (spi_clk_cnt == CLK_PER_HALF_BIT-1) begin
