@@ -21,7 +21,7 @@
 module spi_controller
 #(
 	parameter SPI_MODE = 0,
-	parameter DATA_BW = 0,
+	parameter DATA_BW = 8,
 	parameter CLK_PER_HALF_BIT = 2
 )
 (
